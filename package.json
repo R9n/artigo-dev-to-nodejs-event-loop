@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-event-loop-test",
+  "version": "1.0.0",
+  "description": "Projeto utilizado no artigo escrito para o site dev.to discutindo sobre o event-loop no NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "nodeJs",
+    "boilerplate",
+    "template"
+  ],
+  "author": "Ronaldo Ponciano",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "husky": "^7.0.2",
+    "jest": "^27.2.4",
+    "lint-staged": "^11.2.0"
+  },
+  "lint-staged": {
+    "*.js": "npm run test && eslint --cache --fix"
+  }
+}
